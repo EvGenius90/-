@@ -1,0 +1,261 @@
+* {
+  box-sizing: border-box; }
+
+.header {
+  background: url(/src/images/header-fon.png) 50%/cover no-repeat;
+  height: 980px;
+  margin-bottom: 200px; }
+  .header__content {
+    background: url(/src/images/Ellipse625.png) no-repeat;
+    height: 362px; }
+  .header .container {
+    max-width: 1140px;
+    padding: 0 20px;
+    margin: 0 auto; }
+  .header__block-contacts {
+    display: flex;
+    align-items: center; }
+  .header__logo {
+    margin-right: 40px; }
+  .header__contacts {
+    display: flex;
+    align-items: center;
+    gap: 30px; }
+  .header__name-company {
+    width: 185px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px; }
+  .header__addres {
+    width: 215px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px; }
+  .header__question {
+    width: 185px;
+    text-align: center;
+    text-wrap: balance; }
+    .header__question__socials {
+      margin-bottom: 14px; }
+      .header__question__socials .bx {
+        font-size: 20px;
+        border-radius: 20px;
+        color: white;
+        width: 41px;
+        height: 41px;
+        padding: 10.5px; }
+      .header__question__socials .bxl-whatsapp {
+        background: #28D146;
+        margin-right: 14px; }
+      .header__question__socials .bxl-telegram {
+        background: #229ED9; }
+    .header__question p {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px; }
+  .header__order-call__days {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+    margin-bottom: 2px; }
+  .header__order-call__phone {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 15px; }
+  .header__order-call__call {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #684E3F; }
+  .header__navigation {
+    position: relative;
+    margin-bottom: 110px; }
+  .header__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .header__list li a {
+      text-decoration: none;
+      color: black;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-size: 16px; }
+  .header__hr {
+    position: absolute;
+    width: clamp(500px, 98vw, 1160px);
+    left: -30px; }
+  .header__desc {
+    position: relative; }
+    .header__desc__btn {
+      cursor: pointer;
+      background: linear-gradient(180deg, #FCDFA5 0%, #EEC881 100%);
+      border-radius: 25px;
+      transition: .7s;
+      width: 400px;
+      height: 101px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 600;
+      font-size: 22px;
+      box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.6); }
+      .header__desc__btn svg {
+        margin-right: 10px; }
+    .header__desc__text {
+      background: linear-gradient(250deg, #D8C9B3 -4.91%, rgba(239, 239, 239, 0.99) 63.4%);
+      border-radius: 5px;
+      position: absolute;
+      top: 190px;
+      left: 500px;
+      width: 438px;
+      height: 84px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      font-size: 24px;
+      padding: 12px 0 0 17px;
+      box-shadow: 0px 30px 40px 0px rgba(0, 0, 0, 0.05); }
+      .header__desc__text span {
+        font-weight: 400;
+        font-size: 24px; }
+  .header__title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 64px;
+    margin: 0;
+    margin-bottom: 50px;
+    width: 670px; }
+  .header__box-subtitle {
+    display: flex;
+    align-items: center; }
+  .header__subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 18px;
+    margin-left: 15px;
+    width: 315px; }
+
+.block-services {
+  position: absolute;
+  top: 870px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 223px;
+  display: flex;
+  background: linear-gradient(180deg, #F4F4F4 0%, rgba(239, 239, 239, 0.99) 100%);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px; }
+  .block-services__block {
+    padding: 25px;
+    text-wrap: pretty; }
+  .block-services__fixed-price {
+    width: 323px;
+    border-top-left-radius: 30px; }
+  .block-services__delivery {
+    width: 300px;
+    background: linear-gradient(180deg, #FFF 0%, rgba(216, 216, 216, 0.99) 100%); }
+  .block-services__price {
+    width: 300px; }
+  .block-services__warranty {
+    width: 323px;
+    border-top-right-radius: 30px;
+    background: linear-gradient(180deg, #FFF 0%, rgba(216, 216, 216, 0.99) 100%); }
+  .block-services p {
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700; }
+    .block-services p span {
+      font-family: Roboto;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400; }
+
+.our-services .container {
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto; }
+
+.our-services__title {
+  margin: 0;
+  font-family: Montserrat;
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 30px; }
+
+.our-services__navigation__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  color: #4F4F4F; }
+
+.our-services__hr {
+  margin-bottom: 40px; }
+
+.our-services__products {
+  display: flex;
+  flex-wrap: wrap; }
+  .our-services__products__card {
+    width: 280px;
+    height: 380px;
+    padding: 25px;
+    border-radius: 25px;
+    background: #FFF;
+    box-shadow: 0px 30px 40px 0px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    margin-bottom: 33px;
+    text-align: center;
+    position: relative; }
+    .our-services__products__card .svg {
+      position: absolute;
+      top: 0;
+      right: 0; }
+    .our-services__products__card img {
+      height: 140px;
+      margin-bottom: 8px; }
+    .our-services__products__card__title {
+      font-family: Roboto;
+      font-size: 24px;
+      font-weight: 700;
+      text-align: left;
+      height: 61px;
+      margin-bottom: 8px; }
+    .our-services__products__card__price {
+      color: #707070;
+      font-family: Roboto;
+      font-size: 20px;
+      font-weight: 400;
+      text-align: left;
+      margin-bottom: 37px; }
+      .our-services__products__card__price span {
+        font-weight: 700; }
+    .our-services__products__card__excerpt {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      padding: 0 0 0 40px; }
+      .our-services__products__card__excerpt p {
+        color: #D2AC69;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-right: 20px;
+        cursor: pointer; }
+      .our-services__products__card__excerpt svg {
+        cursor: pointer; }
