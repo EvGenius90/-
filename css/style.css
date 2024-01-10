@@ -261,7 +261,7 @@
         cursor: pointer; }
 
 .discount {
-  margin-bottom: 70px; }
+  margin-bottom: 150px; }
   .discount .container {
     max-width: 1140px;
     padding: 0 20px;
@@ -310,3 +310,78 @@
     .discount__content__right img {
       width: 840px;
       height: 463px; }
+
+.measuring {
+  margin-bottom: 70px; }
+  .measuring .container {
+    max-width: 1140px;
+    padding: 0 20px;
+    margin: 0 auto; }
+  .measuring__content {
+    display: flex;
+    background: linear-gradient(180deg, #F4F4F4 0%, rgba(239, 239, 239, 0.99) 100%);
+    border-radius: 30px;
+    height: 425px; }
+    .measuring__content__left {
+      text-align: left;
+      padding: 30px 0 0 30px; }
+      .measuring__content__left__title {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 36px;
+        font-weight: 700;
+        margin: 0;
+        margin-bottom: 30px; }
+      .measuring__content__left__subtitle {
+        color: #000;
+        font-family: Roboto;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 24px;
+        margin-bottom: 25px; }
+      .measuring__content__left__tel {
+        width: 344px;
+        height: 81px;
+        border-radius: 25px;
+        border: none;
+        outline: none;
+        padding-left: 20px;
+        margin-bottom: 25px; }
+      .measuring__content__left__btn {
+        background: linear-gradient(180deg, #FCDFA5 0%, #EEC881 100%);
+        border-radius: 25px;
+        transition: .7s;
+        width: 344px;
+        height: 81px;
+        border: none;
+        color: #000;
+        font-family: Roboto;
+        font-size: 22px;
+        font-weight: 700;
+        cursor: pointer; }
+    .measuring__content__right img {
+      margin-top: -140px; }
+
+.our-work .container {
+  max-width: 1140px;
+  padding: 0 20px;
+  margin: 0 auto; }
+
+.our-work__content__blocks {
+  display: flex; }
+
+.our-work__content__left {
+  width: 580px;
+  height: 884px;
+  border-radius: 25px;
+  box-shadow: 0px 30px 40px 0px rgba(0, 0, 0, 0.1);
+  margin-right: 20px; }
+
+.our-work__content ul li {
+  list-style: georgian inside url("/src/images/check-211.svg"); }
+
+.our-work__content__right {
+  width: 580px;
+  height: 884px;
+  border-radius: 25px;
+  box-shadow: 0px 30px 40px 0px rgba(0, 0, 0, 0.1); }
