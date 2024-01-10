@@ -259,3 +259,54 @@
         cursor: pointer; }
       .our-services__products__card__excerpt svg {
         cursor: pointer; }
+
+.discount {
+  margin-bottom: 70px; }
+  .discount .container {
+    max-width: 1140px;
+    padding: 0 20px;
+    margin: 0 auto; }
+  .discount__content {
+    background: linear-gradient(180deg, #F4F4F4 0%, rgba(239, 239, 239, 0.99) 100%);
+    display: flex;
+    border-radius: 30px; }
+    .discount__content__left {
+      text-align: center;
+      padding: 30px 0 0 30px; }
+      .discount__content__left__form__title {
+        font-family: Montserrat;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 66px;
+        margin: 0 0 30px 0; }
+      .discount__content__left__form__subtitle {
+        color: #000;
+        font-family: Roboto;
+        font-size: 24px;
+        font-weight: 400;
+        margin-bottom: 30px; }
+        .discount__content__left__form__subtitle span {
+          font-weight: 700; }
+      .discount__content__left__form__tel {
+        margin-bottom: 30px;
+        width: 344px;
+        height: 81px;
+        border-radius: 25px;
+        border: none;
+        outline: none;
+        padding-left: 20px; }
+      .discount__content__left__form__btn {
+        background: linear-gradient(180deg, #FCDFA5 0%, #EEC881 100%);
+        border-radius: 25px;
+        transition: .7s;
+        width: 344px;
+        height: 81px;
+        border: none;
+        color: #000;
+        font-family: Roboto;
+        font-size: 22px;
+        font-weight: 700;
+        cursor: pointer; }
+    .discount__content__right img {
+      width: 840px;
+      height: 463px; }
