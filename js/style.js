@@ -17,10 +17,14 @@ window.addEventListener('DOMContentLoaded', _=>{
 
     function postData(form){
         form.addEventListener('submit', e=>{
-            const btn = document.querySelector('discount__content__left__form__btn')
+            // const btn = document.querySelector('discount__content__left__form__btn')
 
             // Чтобы страница не перезагружалась
             e.preventDefault();
+
+            const btn = document.querySelectorAll('.nnn')
+            const word = 'cooool'
+            
 
             const statusMess = document.createElement('div');
             // statusMess.classList
@@ -52,12 +56,18 @@ window.addEventListener('DOMContentLoaded', _=>{
                 body: JSON.stringify(object)
             }).then(data =>data.text())
             .then(data =>{
-                console.log('good', data);
+                console.log('good', data)
+                for(let i of btn){
+                    const inn = i.innerHTML
+                    i.innerHTML = word
+                    setTimeout(()=>{
+                        statusMess.remove()
+                        i.innerHTML = inn
+                    }, 2000)
+                }
                 statusMess.textContent = message.success;
-                // statusMess.remove()
-                setTimeout(()=>{
-                    statusMess.remove()
-                }, 2000)
+                statusMess.remove()
+                
             }).catch(() =>{
                 console.log('bad');
                 statusMess.textContent = message.failure;
