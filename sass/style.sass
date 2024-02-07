@@ -5,6 +5,7 @@
     background: linear-gradient(180deg, #FCDFA5 0%, #EEC881 100%)
     border-radius: 25px
     transition: .7s
+    cursor: pointer
     &:hover
         // background: linear-gradient(180deg, #CACACA 0%, #D1AB68 100%)
 
@@ -276,6 +277,13 @@
                     cursor: pointer
                 svg
                     cursor: pointer
+    &__content__posting
+        .post-content
+            @include btn-color
+            width: 270px
+            height: 81px
+            padding: 30px 80px
+            margin: 0 auto
 
 .discount
     margin-bottom: 150px
@@ -393,11 +401,80 @@
             border-radius: 25px
             box-shadow: 0px 30px 40px 0px rgba(0, 0, 0, 0.10)
             margin-right: 20px
-        ul
-            li
-                list-style: georgian inside url('/src/images/check-211.svg')
+            padding: 30px 20px
+            &__subject
+                display: flex
+                align-items: center
+                &__svg
+                    margin-right: 21px
+                &__deadlines
+                    font-family: 'Roboto', sans-serif
+                    font-weight: 700
+                    font-size: 36px
+            &__subtitle
+                font-family: 'Roboto', sans-serif
+                font-weight: 400
+                font-size: 24px
+                margin-bottom: 20px
+            ul
+                padding: 0
+                margin: 0
+                margin-bottom: 60px
+                li
+                    // list-style: georgian outside url('/src/images/check-211.svg')
+                    background: url('/src/images/check-211.svg') no-repeat
+                    list-style: none
+                    padding-left: 50px
+                    margin-bottom: 25px
+                    font-weight: 400
+                    font-size: 20px
+                    color: #333
+            &__btn
+                @include btn-color
+                width: 344px
+                height: 81px
+                padding: 25px 55px
+                font-family: "Roboto", sans-serif
+                font-weight: 700
+                font-size: 22px
+                margin: 0 auto
+                
         &__right
             width: 580px
             height: 884px
             border-radius: 25px
             box-shadow: 0px 30px 40px 0px rgba(0, 0, 0, 0.10)
+            padding: 30px 20px
+            &__list
+                padding: 0
+                margin: 0
+                &__li
+                    list-style: none
+                    display: flex
+                    margin-bottom: 10px
+                    .li__box
+                    .li__number
+                        background: linear-gradient(180deg, #fcdfa5 0%, #eec881 100%)
+                        width: 53px
+                        height: 53px
+                        border-radius: 5px
+                        padding: 10px 20px
+                        font-family: "Roboto", sans-serif
+                        font-weight: 700
+                        font-size: 24px
+                        margin-right: 13px
+                    .li__vertycal-line
+                        width: 2px
+                        height: 71px
+                        background: #FADB9E
+                        margin: 13px auto
+                    .li_text
+                        font-family: "Roboto", sans-serif
+                        font-weight: 400
+                        font-size: 16px
+                        line-height: 150%
+                        p
+                            font-weight: 700
+                            font-size: 24px
+                            margin-bottom: 15px
+                            line-height: normal
