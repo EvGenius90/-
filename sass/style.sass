@@ -481,6 +481,7 @@
                             line-height: normal
 
 .promotions
+    margin-bottom: 80px
     .container
         max-width: 1140px
         padding: 0 20px
@@ -488,8 +489,58 @@
     &__blocks
         display: flex
         justify-content: space-between
+        &-discount-title
+            background: url('/src/images/image50.png') right no-repeat
+            height: 123px
+            font-family: "Roboto", sans-serif
+            font-weight: 700
+            font-size: 27px
+            padding-top: 20px
+        &-discount-text
+            font-family: "Roboto", sans-serif
+            font-weight: 400
+            font-size: 20px
+            color: #525252
+            margin-bottom: 40px
+        &-discount-btn
+            @include btn-color
+            width: 315px
+            height: 81px
+            padding: 26px 65px
+            font-family: "Roboto", sans-serif
+            font-weight: 700
+            font-size: 22px
     &__products
-        width: 380px
+        width: 350px
         height: 355px
         border-radius: 25px
         box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.1)
+        padding-left: 20px
+        &-title
+            display: flex
+            align-items: center
+            &-left
+                height: 123px
+                font-family: "Roboto", sans-serif
+                font-weight: 700
+                font-size: 27px
+                background: url('/src/images/transparent.png') right no-repeat
+                width: 100%
+                padding-top: 20px
+                text-wrap: balance
+                margin-bottom: 20px
+        &-text
+            font-family: "Roboto", sans-serif
+            font-weight: 400
+            font-size: 20px
+            color: #525252
+            margin-bottom: 40px
+        &-btn
+            @include btn-color
+            width: 315px
+            height: 81px
+            padding: 26px 40px
+            font-family: "Roboto", sans-serif
+            font-weight: 700
+            font-size: 22px
+    
