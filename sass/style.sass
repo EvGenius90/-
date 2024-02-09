@@ -295,10 +295,13 @@
         background: linear-gradient(180deg, #F4F4F4 0%, rgba(239, 239, 239, 0.99) 100%)
         display: flex
         border-radius: 30px
+        
         &__left
             text-align: center
             padding: 30px 0 0 30px
+            flex: 0 0 100%
             &__form
+                width: 40%
                 &__title
                     font-family: Montserrat
                     font-size: 64px
@@ -332,9 +335,14 @@
                     font-weight: 700
                     cursor: pointer
         &__right
+            flex: 0 0 70%
+            transform: translateX(-90%)
+            // width: 700px
             img
-                width: 840px
+                // width: 840px
                 height: 463px
+                max-width: 100%
+                
 
 .measuring
     margin-bottom: 70px
@@ -510,6 +518,29 @@
             font-family: "Roboto", sans-serif
             font-weight: 700
             font-size: 22px
+        &-pensioners-title
+            background: url('/src/images/document_pensii.png') right/auto 90% no-repeat
+            height: 123px
+            font-family: "Roboto", sans-serif
+            font-weight: 700
+            font-size: 27px
+            padding-top: 35px
+            width: 95%
+            text-wrap: balance
+        &-pensioners-text
+            font-family: "Roboto", sans-serif
+            font-weight: 400
+            font-size: 20px
+            color: #525252
+            margin-bottom: 40px
+        &-pensioners-btn
+            @include btn-color
+            width: 315px
+            height: 81px
+            padding: 26px 65px
+            font-family: "Roboto", sans-serif
+            font-weight: 700
+            font-size: 22px
     &__products
         width: 350px
         height: 355px
@@ -543,4 +574,48 @@
             font-family: "Roboto", sans-serif
             font-weight: 700
             font-size: 22px
-    
+
+.reviews
+    padding: 80px
+    .container
+        max-width: 1140px
+        padding: 0 20px
+        margin: 0 auto
+        
+    &__content
+        position: relative
+    &__left_circle
+        width: 50px
+        height: 50px
+        border: 1px solid black
+        position: absolute
+        top: 330px
+        left: -50px
+        cursor: pointer
+    &__right_circle
+        width: 50px
+        height: 50px
+        border: 1px solid black
+        position: absolute
+        top: 330px
+        right: -50px
+        cursor: pointer
+    &__title
+        font-family: "Roboto", sans-serif
+        font-weight: 700
+        font-size: 64px
+        color: #333
+        width: 550px
+    &__slider
+        display: flex
+        overflow: hidden
+    &__phone:not(:last-child)
+        margin-right: 60px
+    &__phone
+        position: relative
+        &-maket
+        &-screen
+            position: absolute
+            z-index: -1
+            top: 20px
+            left: 12px

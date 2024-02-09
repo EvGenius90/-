@@ -387,6 +387,11 @@
 .discount__content__left {
   text-align: center;
   padding: 30px 0 0 30px;
+  flex: 0 0 100%;
+}
+
+.discount__content__left__form {
+  width: 40%;
 }
 
 .discount__content__left__form__title {
@@ -434,9 +439,14 @@
   cursor: pointer;
 }
 
+.discount__content__right {
+  flex: 0 0 70%;
+  transform: translateX(-90%);
+}
+
 .discount__content__right img {
-  width: 840px;
   height: 463px;
+  max-width: 100%;
 }
 
 .measuring {
@@ -680,6 +690,38 @@
   font-size: 22px;
 }
 
+.promotions__blocks-pensioners-title {
+  background: url("/src/images/document_pensii.png") right/auto 90% no-repeat;
+  height: 123px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 27px;
+  padding-top: 35px;
+  width: 95%;
+  text-wrap: balance;
+}
+
+.promotions__blocks-pensioners-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #525252;
+  margin-bottom: 40px;
+}
+
+.promotions__blocks-pensioners-btn {
+  background: linear-gradient(180deg, #FCDFA5 0%, #EEC881 100%);
+  border-radius: 25px;
+  transition: .7s;
+  cursor: pointer;
+  width: 315px;
+  height: 81px;
+  padding: 26px 65px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+
 .promotions__products {
   width: 350px;
   height: 355px;
@@ -724,4 +766,66 @@
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 22px;
+}
+
+.reviews {
+  padding: 80px;
+}
+
+.reviews .container {
+  max-width: 1140px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.reviews__content {
+  position: relative;
+}
+
+.reviews__left_circle {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  position: absolute;
+  top: 330px;
+  left: -50px;
+  cursor: pointer;
+}
+
+.reviews__right_circle {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  position: absolute;
+  top: 330px;
+  right: -50px;
+  cursor: pointer;
+}
+
+.reviews__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  color: #333;
+  width: 550px;
+}
+
+.reviews__slider {
+  display: flex;
+  overflow: hidden;
+}
+
+.reviews__phone:not(:last-child) {
+  margin-right: 60px;
+}
+
+.reviews__phone {
+  position: relative;
+}
+
+.reviews__phone-screen {
+  position: absolute;
+  z-index: -1;
+  top: 20px;
+  left: 12px;
 }

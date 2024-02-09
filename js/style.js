@@ -322,3 +322,19 @@ window.addEventListener('DOMContentLoaded', _=>{
     //     })
     // }
 })
+
+const reviewPhone = document.querySelectorAll('.reviews__phone')
+let reviewCount = 1
+
+
+document.querySelector('.reviews__right_circle').addEventListener('click', _=>{
+    // ++reviewCount
+
+    console.log(reviewPhone[1])
+})
+
+
+
+document.querySelector('.reviews__left_circle').addEventListener('click', _=>{
+    console.log(reviewPhone)
+})
