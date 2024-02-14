@@ -67,6 +67,7 @@
   width: 41px;
   height: 41px;
   padding: 10.5px;
+  cursor: pointer;
 }
 
 .header__question__socials .bxl-whatsapp {
@@ -208,6 +209,8 @@
   position: absolute;
   top: 870px;
   left: 50%;
+  max-width: 1246px;
+  width: 100%;
   transform: translateX(-50%);
   height: 223px;
   display: flex;
@@ -364,12 +367,16 @@
   cursor: pointer;
   width: 270px;
   height: 81px;
-  padding: 30px 80px;
+  padding: 25px 55px;
   margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
 }
 
 .discount {
   margin-bottom: 150px;
+  padding: 60px;
 }
 
 .discount .container {
@@ -379,19 +386,20 @@
 }
 
 .discount__content {
-  background: linear-gradient(180deg, #F4F4F4 0%, rgba(239, 239, 239, 0.99) 100%);
   display: flex;
   border-radius: 30px;
+  height: 450px;
+  padding-left: calc( (100% - 1200px) / 2);
 }
 
 .discount__content__left {
   text-align: center;
   padding: 30px 0 0 30px;
-  flex: 0 0 100%;
-}
-
-.discount__content__left__form {
-  width: 40%;
+  flex-shrink: 0;
+  width: 490px;
+  background: linear-gradient(180deg, #F4F4F4 0%, rgba(239, 239, 239, 0.99) 100%);
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
 }
 
 .discount__content__left__form__title {
@@ -440,13 +448,17 @@
 }
 
 .discount__content__right {
-  flex: 0 0 70%;
-  transform: translateX(-90%);
+  background: linear-gradient(180deg, #F4F4F4 0%, rgba(239, 239, 239, 0.99) 100%);
+  max-width: 800px;
+  width: 100%;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
 .discount__content__right img {
-  height: 463px;
-  max-width: 100%;
+  height: 490px;
+  width: 100%;
+  margin-top: -50px;
 }
 
 .measuring {
@@ -783,23 +795,89 @@
 }
 
 .reviews__left_circle {
-  width: 50px;
-  height: 50px;
-  border: 1px solid black;
+  width: 60px;
+  height: 60px;
   position: absolute;
   top: 330px;
-  left: -50px;
+  left: -60px;
   cursor: pointer;
+  border-radius: 40px;
+  background: #F2F2F2;
+}
+
+.reviews__left_circle-arrow-upper {
+  position: absolute;
+  top: 19px;
+  left: 15px;
+  width: 20px;
+  height: 6px;
+  background: #D2AC69;
+  border-radius: 20px;
+  transform: rotate(-35deg);
+}
+
+.reviews__left_circle-arrow-range {
+  position: absolute;
+  top: 25px;
+  left: 15px;
+  width: 30px;
+  height: 6px;
+  background: #D2AC69;
+  border-radius: 20px;
+}
+
+.reviews__left_circle-arrow-lower {
+  position: absolute;
+  top: 31px;
+  left: 15px;
+  width: 20px;
+  height: 6px;
+  background: #D2AC69;
+  border-radius: 20px;
+  transform: rotate(35deg);
 }
 
 .reviews__right_circle {
-  width: 50px;
-  height: 50px;
-  border: 1px solid black;
+  width: 60px;
+  height: 60px;
   position: absolute;
   top: 330px;
-  right: -50px;
+  right: -70px;
   cursor: pointer;
+  border-radius: 40px;
+  background: #F2F2F2;
+}
+
+.reviews__right_circle-arrow-upper {
+  position: absolute;
+  top: 19px;
+  right: 15px;
+  width: 20px;
+  height: 6px;
+  background: #D2AC69;
+  border-radius: 20px;
+  transform: rotate(35deg);
+}
+
+.reviews__right_circle-arrow-range {
+  position: absolute;
+  top: 25px;
+  right: 15px;
+  width: 30px;
+  height: 6px;
+  background: #D2AC69;
+  border-radius: 20px;
+}
+
+.reviews__right_circle-arrow-lower {
+  position: absolute;
+  top: 31px;
+  right: 15px;
+  width: 20px;
+  height: 6px;
+  background: #D2AC69;
+  border-radius: 20px;
+  transform: rotate(-35deg);
 }
 
 .reviews__title {
@@ -815,12 +893,15 @@
   overflow: hidden;
 }
 
-.reviews__phone:not(:last-child) {
+.reviews__phone {
+  position: relative;
+  transition: all 1s;
+  width: 190px;
   margin-right: 60px;
 }
 
-.reviews__phone {
-  position: relative;
+.reviews__phone-maket {
+  width: 230px;
 }
 
 .reviews__phone-screen {
@@ -828,4 +909,11 @@
   z-index: -1;
   top: 20px;
   left: 12px;
+  width: 215px;
+}
+
+.dnone {
+  width: 0;
+  transition: 1s;
+  margin-right: 0;
 }

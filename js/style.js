@@ -324,13 +324,18 @@ window.addEventListener('DOMContentLoaded', _=>{
 })
 
 const reviewPhone = document.querySelectorAll('.reviews__phone')
-let reviewCount = 1
+const phoneMaket = document.querySelectorAll('.reviews__phone-maket')
+const phoneScreen = document.querySelectorAll('.reviews__phone-screen')
+let reviewCount = 0
 
 
 document.querySelector('.reviews__right_circle').addEventListener('click', _=>{
-    // ++reviewCount
+    
 
-    console.log(reviewPhone[1])
+    reviewPhone[reviewCount].classList.add('dnone')
+    // phoneMaket[reviewCount].classList.add('dnone')
+    // phoneScreen[reviewCount].classList.add('dnone')
+    ++reviewCount
 })
 
 
