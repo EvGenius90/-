@@ -642,7 +642,7 @@
         height: 60px
         position: absolute
         top: 330px
-        right: -70px
+        right: -50px
         cursor: pointer
         border-radius: 40px
         background: #F2F2F2
@@ -681,21 +681,18 @@
     &__slider
         display: flex
         overflow: hidden
-    // &__phone:not(:last-child)
-    //     margin-right: 60px
+        position: relative
+    &__phone:not(:last-child)
+        margin-right: 60px
     &__phone
         position: relative
-        transition: all 1s
-        width: 190px
-        margin-right: 60px
+        transition: 1s
         &-maket
-            width: 230px
         &-screen
             position: absolute
             z-index: -1
             top: 20px
             left: 12px
-            width: 215px
 
 .dnone
     // display: none

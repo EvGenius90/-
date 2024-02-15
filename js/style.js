@@ -326,20 +326,38 @@ window.addEventListener('DOMContentLoaded', _=>{
 const reviewPhone = document.querySelectorAll('.reviews__phone')
 const phoneMaket = document.querySelectorAll('.reviews__phone-maket')
 const phoneScreen = document.querySelectorAll('.reviews__phone-screen')
-let reviewCount = 0
+const reviewsSlider = document.querySelector('.reviews__slider')
+// let reviewCount = 0
+let offset = 0
 
 
 document.querySelector('.reviews__right_circle').addEventListener('click', _=>{
     
+    if(offset >= -809){
 
-    reviewPhone[reviewCount].classList.add('dnone')
-    // phoneMaket[reviewCount].classList.add('dnone')
-    // phoneScreen[reviewCount].classList.add('dnone')
-    ++reviewCount
+        offset -= 270
+
+        for(let i of reviewPhone){
+
+            i.style.left = offset + 'px'
+
+        }
+        
+    }
+    console.log(offset)
+    
 })
 
 
 
 document.querySelector('.reviews__left_circle').addEventListener('click', _=>{
-    console.log(reviewPhone)
+
+    offset += 270
+
+        for(let i of reviewPhone){
+
+            i.style.left = offset + 'px'
+            
+        }
+
 })
