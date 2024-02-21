@@ -354,10 +354,17 @@ document.querySelector('.reviews__left_circle').addEventListener('click', _=>{
 
     offset += 270
 
+    if(offset <= 0){
         for(let i of reviewPhone){
 
             i.style.left = offset + 'px'
             
         }
+    }
+    else{
+        offset -= 270
+    }
+
+    
 
 })

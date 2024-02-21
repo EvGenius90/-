@@ -892,6 +892,7 @@
   display: flex;
   overflow: hidden;
   position: relative;
+  width: 1080px;
 }
 
 .reviews__phone:not(:last-child) {
@@ -910,8 +911,117 @@
   left: 12px;
 }
 
-.dnone {
-  width: 0;
-  transition: 1s;
-  margin-right: 0;
+.fabrics .container {
+  max-width: 1180px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.fabrics__content {
+  display: flex;
+  align-items: center;
+}
+
+.fabrics__left {
+  padding-top: 30px;
+  margin-right: 25px;
+}
+
+.fabrics__left-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  margin-bottom: 50px;
+}
+
+.fabrics__left-content {
+  display: flex;
+}
+
+.fabrics__left-content-left {
+  margin-right: 20px;
+}
+
+.fabrics__left-content-right {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  color: #525252;
+}
+
+.fabrics__right {
+  width: 380px;
+  height: 562px;
+  padding: 40px 20px;
+  text-align: left;
+  box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+}
+
+.fabrics__right-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.fabrics__right-form-inputs {
+  width: 344px;
+  height: 80px;
+  border-radius: 25px;
+  background: #f4f4f4;
+  border: none;
+  padding: 30px;
+}
+
+.fabrics__right-form-inputs:focus-visible {
+  border: none;
+}
+
+.fabrics__right-form-firstName {
+  margin-bottom: 15px;
+}
+
+.fabrics__right-form-phone {
+  margin-bottom: 30px;
+}
+
+.fabrics__right-form-button {
+  background: linear-gradient(180deg, #FCDFA5 0%, #EEC881 100%);
+  border-radius: 25px;
+  transition: .7s;
+  cursor: pointer;
+  width: 344px;
+  height: 80px;
+  border-radius: 25px;
+  border: none;
+}
+
+.fabrics__right-form-box {
+  margin-bottom: 20px;
+}
+
+.fabrics__right-form-box .inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.fabrics__right-form-box .label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.fabrics__right-form-box .label img {
+  margin-right: 15px;
+}
+
+.fabrics__right-form-box .label hr {
+  margin: 0;
+  margin-top: -3px;
 }

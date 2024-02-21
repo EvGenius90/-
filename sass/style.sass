@@ -682,6 +682,7 @@
         display: flex
         overflow: hidden
         position: relative
+        width: 1080px
     &__phone:not(:last-child)
         margin-right: 60px
     &__phone
@@ -694,8 +695,79 @@
             top: 20px
             left: 12px
 
-.dnone
-    // display: none
-    width: 0
-    transition: 1s
-    margin-right: 0
+.fabrics
+    .container
+        max-width: 1180px
+        padding: 0 20px
+        margin: 0 auto
+    &__content
+        display: flex
+        align-items: center
+    &__left
+        padding-top: 30px
+        margin-right: 25px
+        &-title
+            font-family: "Roboto", sans-serif
+            font-weight: 700
+            font-size: 60px
+            margin-bottom: 50px
+        &-content
+            display: flex
+            &-left
+                margin-right: 20px
+            &-right
+                font-family: "Roboto", sans-serif
+                font-weight: 400
+                font-size: 20px
+                line-height: 120%
+                color: #525252
+    &__right
+        width: 380px
+        height: 562px
+        padding: 40px 20px
+        text-align: left
+        box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.1)
+        border-radius: 25px
+        &-title
+            font-family: "Roboto", sans-serif
+            font-weight: 700
+            font-size: 24px
+            margin-bottom: 20px
+        &-form
+            &-inputs
+                width: 344px
+                height: 80px
+                border-radius: 25px
+                background: #f4f4f4
+                border: none
+                padding: 30px
+            &-inputs:focus-visible
+                border: none
+            &-firstName
+                margin-bottom: 15px
+            &-phone
+                margin-bottom: 30px
+            &-button
+                @include btn-color
+                width: 344px
+                height: 80px
+                border-radius: 25px
+                border: none
+            &-box
+                margin-bottom: 20px
+                .inputfile
+                    width: 0.1px
+                    height: 0.1px
+                    opacity: 0
+                    overflow: hidden
+                    position: absolute
+                    z-index: -1
+                .label
+                    display: flex
+                    align-items: center
+                    cursor: pointer
+                    img
+                        margin-right: 15px
+                    hr
+                        margin: 0
+                        margin-top: -3px
