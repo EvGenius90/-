@@ -911,6 +911,10 @@
   left: 12px;
 }
 
+.fabrics {
+  margin-bottom: 120px;
+}
+
 .fabrics .container {
   max-width: 1180px;
   padding: 0 20px;
@@ -919,7 +923,6 @@
 
 .fabrics__content {
   display: flex;
-  align-items: center;
 }
 
 .fabrics__left {
@@ -996,6 +999,7 @@
   height: 80px;
   border-radius: 25px;
   border: none;
+  margin-bottom: 20px;
 }
 
 .fabrics__right-form-box {
@@ -1012,6 +1016,7 @@
 }
 
 .fabrics__right-form-box .label {
+  width: 170px;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -1024,4 +1029,134 @@
 .fabrics__right-form-box .label hr {
   margin: 0;
   margin-top: -3px;
+}
+
+.fabrics__right-form-forCheckbox {
+  display: flex;
+}
+
+.fabrics__right-form-forCheckbox-checkbox {
+  width: 62px;
+  background: #F4F4F4;
+  margin-right: 4px;
+}
+
+.fabrics__right-form-forCheckbox p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.block-contacts .container {
+  max-width: 1400px;
+  padding: 0 20px;
+}
+
+.block-contacts__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  margin-bottom: 40px;
+}
+
+.block-contacts__title h2 {
+  margin: 0 0 0 335px;
+}
+
+.block-contacts__aside {
+  display: flex;
+}
+
+.block-contacts__aside-left {
+  margin-right: 30px;
+}
+
+.block-contacts__aside-right-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.block-contacts__aside-right-addres {
+  margin-bottom: 30px;
+}
+
+.block-contacts__aside-right-addres-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.block-contacts__aside-right-addres-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #525252;
+}
+
+.block-contacts__aside-right-WorkingHours {
+  margin-bottom: 30px;
+}
+
+.block-contacts__aside-right-WorkingHours-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.block-contacts__aside-right-WorkingHours-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #525252;
+}
+
+.block-contacts__aside-right-phones {
+  margin-bottom: 30px;
+}
+
+.block-contacts__aside-right-phones-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.block-contacts__aside-right-phones-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #525252;
+}
+
+.block-contacts__aside-right-email {
+  margin-bottom: 30px;
+}
+
+.block-contacts__aside-right-email-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.block-contacts__aside-right-email-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #525252;
+}
+
+.block-contacts__aside-right-messengers {
+  display: flex;
+}
+
+.block-contacts__aside-right-messengers-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 15px;
 }

@@ -9,6 +9,19 @@
     &:hover
         // background: linear-gradient(180deg, #CACACA 0%, #D1AB68 100%)
 
+
+@mixin block-contacts-title
+    font-family: "Roboto", sans-serif
+    font-weight: 700
+    font-size: 24px
+    margin-bottom: 15px
+
+@mixin block-contacts-text
+    font-family: "Roboto", sans-serif
+    font-weight: 400
+    font-size: 24px
+    color: #525252
+
 .header
     background: url(/src/images/header-fon.png) 50%/cover no-repeat
     height: 980px
@@ -696,13 +709,13 @@
             left: 12px
 
 .fabrics
+    margin-bottom: 120px
     .container
         max-width: 1180px
         padding: 0 20px
         margin: 0 auto
     &__content
         display: flex
-        align-items: center
     &__left
         padding-top: 30px
         margin-right: 25px
@@ -753,6 +766,7 @@
                 height: 80px
                 border-radius: 25px
                 border: none
+                margin-bottom: 20px
             &-box
                 margin-bottom: 20px
                 .inputfile
@@ -763,6 +777,7 @@
                     position: absolute
                     z-index: -1
                 .label
+                    width: 170px
                     display: flex
                     align-items: center
                     cursor: pointer
@@ -771,3 +786,65 @@
                     hr
                         margin: 0
                         margin-top: -3px
+            &-forCheckbox
+                display: flex
+                &-checkbox
+                    width: 62px
+                    // height: 32px
+                    background: #F4F4F4
+                    margin-right: 4px
+                p
+                    font-family: "Roboto", sans-serif
+                    font-weight: 400
+                    font-size: 14px
+
+.block-contacts
+    .container
+        max-width: 1400px
+        padding: 0 20px
+    &__content
+    &__title
+        font-family: "Roboto", sans-serif
+        font-weight: 700
+        font-size: 64px
+        margin-bottom: 40px
+        h2
+            margin: 0 0 0 335px
+    &__aside
+        display: flex
+        &-left
+            margin-right: 30px
+        &-right
+            &-title
+                font-family: "Roboto", sans-serif
+                font-weight: 700
+                font-size: 36px
+                margin-bottom: 30px
+            &-addres
+                margin-bottom: 30px
+                &-title
+                    @include block-contacts-title
+                &-text
+                    @include block-contacts-text
+            &-WorkingHours
+                margin-bottom: 30px
+                &-title
+                    @include block-contacts-title
+                &-text
+                    @include block-contacts-text
+            &-phones
+                margin-bottom: 30px
+                &-title
+                    @include block-contacts-title
+                &-text
+                    @include block-contacts-text
+            &-email
+                margin-bottom: 30px
+                &-title
+                    @include block-contacts-title
+                &-text
+                    @include block-contacts-text
+            &-messengers
+                display: flex
+                &-title
+                    @include block-contacts-title
