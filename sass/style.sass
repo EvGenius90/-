@@ -724,6 +724,7 @@
             font-weight: 700
             font-size: 60px
             margin-bottom: 50px
+            color: #333
         &-content
             display: flex
             &-left
@@ -799,22 +800,27 @@
                     font-size: 14px
 
 .block-contacts
+    margin-bottom: 70px
     .container
         max-width: 1400px
         padding: 0 20px
+        padding-left: 0
     &__content
     &__title
         font-family: "Roboto", sans-serif
         font-weight: 700
         font-size: 64px
         margin-bottom: 40px
+        color: #333
         h2
             margin: 0 0 0 335px
     &__aside
         display: flex
         &-left
             margin-right: 30px
+            width: 950px
         &-right
+            width: 500px
             &-title
                 font-family: "Roboto", sans-serif
                 font-weight: 700
@@ -846,5 +852,36 @@
                     @include block-contacts-text
             &-messengers
                 display: flex
+                // align-items: center
+                margin-bottom: 50px
                 &-title
                     @include block-contacts-title
+                    margin-bottom: 0
+                    margin-right: 20px
+                .bxl-whatsapp
+                    font-size: 40px
+                    color: #28D146
+                    margin-right: 10px
+                    cursor: pointer
+                .bxl-telegram
+                    font-size: 20px
+                    color: white
+                    background: #229ED9
+                    border-radius: 40px
+                    padding: 10px
+                    cursor: pointer
+            &-button
+                width: 344px
+                height: 81px
+                padding: 25px 80px
+                font-family: "Roboto", sans-serif
+                font-weight: 700
+                font-size: 22px
+                @include btn-color
+                
+.footer
+    .container
+        max-width: 1180px
+        padding: 0 20px
+        margin: 0 auto
+    &__content

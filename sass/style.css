@@ -935,6 +935,7 @@
   font-weight: 700;
   font-size: 60px;
   margin-bottom: 50px;
+  color: #333;
 }
 
 .fabrics__left-content {
@@ -1047,9 +1048,14 @@
   font-size: 14px;
 }
 
+.block-contacts {
+  margin-bottom: 70px;
+}
+
 .block-contacts .container {
   max-width: 1400px;
   padding: 0 20px;
+  padding-left: 0;
 }
 
 .block-contacts__title {
@@ -1057,6 +1063,7 @@
   font-weight: 700;
   font-size: 64px;
   margin-bottom: 40px;
+  color: #333;
 }
 
 .block-contacts__title h2 {
@@ -1069,6 +1076,11 @@
 
 .block-contacts__aside-left {
   margin-right: 30px;
+  width: 950px;
+}
+
+.block-contacts__aside-right {
+  width: 500px;
 }
 
 .block-contacts__aside-right-title {
@@ -1152,6 +1164,7 @@
 
 .block-contacts__aside-right-messengers {
   display: flex;
+  margin-bottom: 50px;
 }
 
 .block-contacts__aside-right-messengers-title {
@@ -1159,4 +1172,41 @@
   font-weight: 700;
   font-size: 24px;
   margin-bottom: 15px;
+  margin-bottom: 0;
+  margin-right: 20px;
+}
+
+.block-contacts__aside-right-messengers .bxl-whatsapp {
+  font-size: 40px;
+  color: #28D146;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.block-contacts__aside-right-messengers .bxl-telegram {
+  font-size: 20px;
+  color: white;
+  background: #229ED9;
+  border-radius: 40px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.block-contacts__aside-right-button {
+  width: 344px;
+  height: 81px;
+  padding: 25px 80px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  background: linear-gradient(180deg, #FCDFA5 0%, #EEC881 100%);
+  border-radius: 25px;
+  transition: .7s;
+  cursor: pointer;
+}
+
+.footer .container {
+  max-width: 1180px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
