@@ -1205,8 +1205,89 @@
   cursor: pointer;
 }
 
+.footer {
+  background: #333;
+}
+
 .footer .container {
   max-width: 1180px;
   padding: 0 20px;
   margin: 0 auto;
+}
+
+.footer__content {
+  padding-top: 60px;
+}
+
+.footer__menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__menu-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #eec881;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.footer__menu-ul {
+  margin: 0;
+  padding: 0;
+}
+
+.footer__menu-ul li {
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.footer__menu-ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer__menu-range {
+  display: flex;
+}
+
+.footer__menu-range-left {
+  margin-right: 80px;
+}
+
+.footer__menu-low {
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.footer__menu-low-politic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+}
+
+.footer__menu-low-socials .bxl-whatsapp {
+  color: white;
+  background: #28D146;
+  font-size: 40px;
+  border-radius: 100%;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.footer__menu-low-socials .bxl-telegram {
+  font-size: 30px;
+  color: white;
+  background: #229ED9;
+  border-radius: 100%;
+  padding: 5px;
+  cursor: pointer;
 }

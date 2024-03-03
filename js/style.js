@@ -368,3 +368,5 @@ document.querySelector('.reviews__left_circle').addEventListener('click', _=>{
     
 
 })
+
+console.log(document.html)
