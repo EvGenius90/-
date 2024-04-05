@@ -176,6 +176,99 @@
         margin-left: 15px
         width: 315px
 
+.display-none
+    display: none
+
+.modal_window
+    position: fixed
+    z-index: 1
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 1206px
+    height: 618px
+    background: #FFFFFF
+    border-radius: 25px
+    &-content
+        padding: 71px
+    &-title
+        font-family: "Roboto", sans-serif
+        font-weight: 700
+        font-size: 36px
+        text-align: center
+        margin: 0 auto
+        margin-bottom: 90px
+    &-scan
+        display: flex
+        justify-content: space-between
+        &-first_step
+            width: 300px
+            &-btn
+                width: 111px
+                height: 51px
+                background: linear-gradient(180deg, #fcdfa5 0%, #eec881 100%)
+                border-radius: 25px
+                text-align: center
+                padding-top: 15px
+                font-family: "Roboto", sans-serif
+                font-weight: 400
+                font-size: 20px
+                margin-bottom: 10px
+            &-text
+                font-family: "Roboto", sans-serif
+                font-weight: 400
+                font-size: 20px
+                margin-bottom: 15px
+                a
+                    text-decoration: none
+                    span
+                        color: #00B046
+                        font-weight: 700
+            &-qrcode
+                text-align: center
+        &-second_step
+            width: 290px
+            &-btn
+                width: 111px
+                height: 51px
+                background: linear-gradient(180deg, #fcdfa5 0%, #eec881 100%)
+                border-radius: 25px
+                text-align: center
+                padding-top: 15px
+                font-family: "Roboto", sans-serif
+                font-weight: 400
+                font-size: 20px
+                margin-bottom: 10px
+            &-text
+                font-family: "Roboto", sans-serif
+                font-weight: 400
+                font-size: 20px
+        &-third_step
+            width: 200px
+            &-btn
+                width: 111px
+                height: 51px
+                background: linear-gradient(180deg, #fcdfa5 0%, #eec881 100%)
+                border-radius: 25px
+                text-align: center
+                padding-top: 15px
+                font-family: "Roboto", sans-serif
+                font-weight: 400
+                font-size: 20px
+                margin-bottom: 10px
+            &-text
+                font-family: "Roboto", sans-serif
+                font-weight: 400
+                font-size: 20px
+        &-image
+            position: relative
+            &-screen
+                position: absolute
+                z-index: -1
+                top: 12px
+                right: 30px
+    
+
 .block-services
     position: absolute
     top: 870px
@@ -759,8 +852,16 @@
                 border: none
             &-firstName
                 margin-bottom: 15px
+                outline: none
+                font-family: "Roboto", sans-serif
+                font-weight: 400
+                font-size: 20px
             &-phone
                 margin-bottom: 30px
+                outline: none
+                font-family: "Roboto", sans-serif
+                font-weight: 400
+                font-size: 20px
             &-button
                 @include btn-color
                 width: 344px
@@ -768,6 +869,9 @@
                 border-radius: 25px
                 border: none
                 margin-bottom: 20px
+                font-family: "Roboto", sans-serif
+                font-weight: 700
+                font-size: 22px
             &-box
                 margin-bottom: 20px
                 .inputfile
@@ -778,7 +882,7 @@
                     position: absolute
                     z-index: -1
                 .label
-                    width: 170px
+                    // width: 170px
                     display: flex
                     align-items: center
                     cursor: pointer
@@ -787,6 +891,12 @@
                     hr
                         margin: 0
                         margin-top: -3px
+                    span
+                        font-family: "Roboto", sans-serif
+                        font-weight: 400
+                        font-size: 20px
+                        text-decoration: underline
+                        text-decoration-skip-ink: none
             &-forCheckbox
                 display: flex
                 &-checkbox
@@ -896,8 +1006,10 @@
             font-weight: 700
             font-size: 20px
             color: #eec881
-            margin-bottom: 15px
             cursor: pointer
+            margin-bottom: 15px
+            &-margin
+                // margin: 15px 0
         &-list
         &-ul
             margin: 0
@@ -906,11 +1018,15 @@
                 list-style: none
                 font-family: "Roboto", sans-serif
                 font-weight: 400
-                font-size: 16px
+                
                 color: #fff
                 cursor: pointer
-            li:not(:last-child)
-                margin-bottom: 10px
+                // margin-bottom: 10px
+        &-li
+            font-size: 16px
+            margin-bottom: 10px
+            // li:not(:last-child)
+            //     margin-bottom: 10px
         &-range
             display: flex
             &-left
@@ -942,4 +1058,30 @@
                     border-radius: 100%
                     padding: 5px
                     cursor: pointer
+        &-ul
+            
+            li
+                
+                list-style: none
+            &-phone
+                background: url(/src/images/icons/phone.png) no-repeat
+                padding-left: 35px
+                font-size: 20px
+                margin-bottom: 20px
+            &-address
+                background: url(/src/images/icons/Vector.png) no-repeat
+                padding-left: 35px
+                font-size: 20px
+                margin-bottom: 20px
+            &-email
+                background: url(/src/images/icons/mail-62.png) no-repeat
+                padding-left: 35px
+                font-size: 20px
+                margin-bottom: 20px
+            &-mode
+                background: url(/src/images/icons/clock.png) no-repeat
+                padding-left: 35px
+                font-size: 20px
+
+                    
 

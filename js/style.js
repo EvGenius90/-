@@ -49,16 +49,16 @@ window.addEventListener('DOMContentLoaded', _=>{
     forms.forEach(item =>{
         bindPostData(item);
     })
-    const getResources = async (url) =>{
-        const res = await fetch(url);
+    // const getResources = async (url) =>{
+    //     const res = await fetch(url);
 
-        if(!res.ok){
-            throw new Error(`Could not fetch ${url}, status: ${res.status}`)
-        }
+    //     if(!res.ok){
+    //         throw new Error(`Could not fetch ${url}, status: ${res.status}`)
+    //     }
 
-        return await res.json()
+    //     return await res.json()
 
-    }
+    // }
 
     // getResources('./db.json')
     //     .then(({menu}) => {
@@ -208,8 +208,8 @@ window.addEventListener('DOMContentLoaded', _=>{
             statusMess.textContent = message.loading;
             form.append(statusMess);
 
-            const request = new XMLHttpRequest();
-            request.open('POST', './db.json');
+            // const request = new XMLHttpRequest();
+            // request.open('POST', './db.json');
 
             
 
@@ -365,8 +365,12 @@ document.querySelector('.reviews__left_circle').addEventListener('click', _=>{
         offset -= 270
     }
 
-    
-
 })
 
-console.log(document.html)
+const modalWinow = document.querySelector('.modal_window')
+
+document.querySelector('.header__desc__btn').addEventListener('click', _=>{
+    
+    modalWinow.classList.toggle('display-none')
+
+})
